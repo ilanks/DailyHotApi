@@ -1,8 +1,8 @@
 {
   "version": 2,
   "functions": {
-    "api/index.js": {
-      "runtime": "@vercel/node"
+    "pages/api/index.js": {
+      "runtime": "@vercel/node-server@1.3.13"
     }
   },
   "rewrites": [

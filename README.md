@@ -38,6 +38,7 @@
 | 原神         | 最新消息 | genshin             | 🟢       |
 | 微信读书     | 飙升榜   | weread              | 🟢       |
 | 快手         | 热榜     | kuaishou            | 🟢       |
+| Github       | Trending | github              | 🟢       |
 | 历史上的今天 | 指定日期 | calendar            | 🟢       |
 
 ### 特殊接口说明
@@ -66,6 +67,28 @@ pnpm install
 
 // 运行
 pnpm start
+```
+
+## Docker 部署
+
+> 安装及配置 Docker 将不在此处说明，请自行解决
+
+### 本地构建
+
+```bash
+// 构建
+docker build -t dailyhot-api .
+// 运行
+docker run -p 6688:6688 -d dailyhot-api
+```
+
+### 在线部署
+
+```bash
+// 拉取
+docker pull imsyy/dailyhot-api:1.0.5
+// 运行
+docker run -p 6688:6688 -d imsyy/dailyhot-api:1.0.5
 ```
 
 ## Vercel 部署
